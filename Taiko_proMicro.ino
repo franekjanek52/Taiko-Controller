@@ -46,7 +46,8 @@ void loop() {                         //DL..DR..KL..KR
  maxv = 0; //max sensor value reset
  for(byte i = 0; i < 4; i++){  // checking for maximum sensor value
     if(sensorValue[i] > maxv){ 
-      maxv = sensorValue[i];  
+      maxv = sensorValue[i];
+      id = i;
       } 
  }
 
